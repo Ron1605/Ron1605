@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Studio</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Playball&family=Rubik+Mono+One&family=Ubuntu:ital,wght@1,500&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset  */
+    body {
+        font-family: 'Playball', cursive;
+        font-family: 'Rubik Mono One', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+        color: white;
+
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 7px;
+        top: 3px;
+    }
+
+    .left img {
+        height: 127px;
+        width: 151px
+    }
+
+    .left #name {
+        font-style: italic;
+        margin: -18px 11px;
+    }
+
+    .mid {
+        /* border: 2px solid rgb(117, 204, 88); */
+        display: block;
+        margin: 10px 163px;
+        width: 37%;
+        height: 21px;
+    }
+
+    .navbar {
+        display: inline;
+    }
+
+    .navbar li {
+        display: inline;
+    }
+
+    .navbar li a {
+        color: antiquewhite;
+        text-decoration: none;
+        padding: 28px 15px;
+        font-size: 14px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: rgb(150, 161, 104);
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 3px;
+    }
+
+    .btn {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 10px;
+        display: inline-block;
+        background-color: white;
+        color: black;
+        font-size: 10px;
+        font-style: italic;
+        border: 2px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 83px;
+        height: 26px;
+    }
+
+    .btn:hover {
+        color: rgb(15, 54, 212);
+        text-decoration: underline;
+        background-color: blanchedalmond;
+    }
+
+    #photo img {
+        cursor: pointer;
+        height: 20px;
+        width: 17px;
+        display: inline-block;
+        position: absolute;
+        right: 185px;
+        top: 16px;
+    }
+
+    #wp img {
+        cursor: pointer;
+        height: 19px;
+        width: 13px;
+        display: inline-block;
+        position: absolute;
+        right: 86px;
+        top: 16px;
+    }
+
+    .container {
+        border: 2px solid white;
+    border-radius: 10px;
+    margin: 151px 829px;
+    padding: 10px 16px;
+    width: 40%;
+    height: 165px;
+    }
+
+    .container h2 {
+        font-family: monospace;
+        font-style: italic;
+        letter-spacing: 4px;
+        margin: -3px 18px;
+        font-size: 28px;
+    }
+
+    .formgroup {
+        
+        padding-left: 40px;
+        margin: 10px 10px;
+    
+    }
+
+    .formgroup input {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    display: block;
+    width: 518px;
+    margin: 7px -22px;
+    border: 0px solid white;
+    border-radius: 8px;
+    padding: 4px;
+    }
+    .container button{
+        margin: auto;
+    padding: 2px;
+    display: block;
+    width: 37%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    }
+</style>
+
+
+<body>
+    <header class="header">
+
+
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="blank">
+            <div id="name">FITNESS STUDIO</div>
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class='active'>HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FITNESS CALCULATOR</a></li>
+                <li><a href="#">CONTACT US</a></li>
+
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn" id="call">CALL US</button>
+            <button class="btn">WHATS APP</button>
+        </div>
+        <div id="photo">
+            <img src="https://w7.pngwing.com/pngs/344/761/png-transparent-computer-icons-call-icon-cdr-text-copyright.png"
+                alt="blank">
+        </div>
+        <div id="wp">
+            <img src="https://w7.pngwing.com/pngs/645/890/png-transparent-computer-icons-logo-whatsapp-whatsapp-text-logo-whatsapp-icon-thumbnail.png"
+                alt="blank">
+        </div>
+        <div class="container">
+            <h2>JOIN THE BEST GYM OF KOLKATA</h2>
+            <form action="noaction.php">
+                <div class="formgroup">
+                    <input type="text" name="" placeholder="Enter Your Name">
+                </div>
+                <div class="formgroup">
+                    <input type="text" name="" placeholder="Enter Your Contact Number">
+                </div>
+                <div class="formgroup">
+                    <input type="email" name="" placeholder="Enter Your Mail Id">
+                </div>
+            </form>
+            <button class="btn">SUBMIT</button>
+        </div>
+
+    </header>
+
+</body>
+
+</html>
